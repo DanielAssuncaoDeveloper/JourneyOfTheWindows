@@ -1,7 +1,10 @@
 #include <stdio.h>
-#include "HeaderFiles/testHeader.h"
+
+#include "src/lab/display/mapService.h"
+
 
 int main(void) {
-    printf("Soma: %d", somar(1, 5));
+    map_init(10, 20);
+    map_print();
     return 0;
 }
