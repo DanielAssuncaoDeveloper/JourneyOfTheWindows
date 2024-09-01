@@ -6,11 +6,10 @@
 enum TypeActor {
     HERO,
     ENEMY
-  };
+};
 
 struct Actor {
-    char name[100];
-    struct Position* position;
+    char* name;
     enum TypeActor type;
 };
 

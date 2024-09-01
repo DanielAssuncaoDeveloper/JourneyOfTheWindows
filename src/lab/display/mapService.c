@@ -3,18 +3,20 @@
 
 #include "mapService.h"
 #include "structs/Map.h"
+#include "structs/Entity.h"
 
 struct Map map;
 
-struct Position** map_create(int height, int width) {
-    struct Position** positions = (struct Position **) malloc(height * sizeof(struct Position*));
+struct Position** map_create(int height, int width, struct EntityMapper* mapper) {
+    struct Position** positions = (struct Position**) malloc(height * sizeof(struct Position*));
+    //struct Entity* entities = malloc(sizeof(mapper) / sizeof(struct Entity) );
 
     for (int i = 0; i < height; i++) {
-        positions[i] = (struct Position *) malloc(width * sizeof(struct Position));
+        positions[i] = (struct Position *) malloc(width * sizeof(struct Position*));
 
         for (int j = 0; j < width; j++) {
             positions[i][j].xPosition = i;
-            positions[i][j].yPosition = j;
+            positions[i][j].yPosition  = j;
         }
     }
 
@@ -22,11 +24,11 @@ struct Position** map_create(int height, int width) {
     return positions;
 }
 
-void map_init(int height, int width) {
+void map_init(int height, int width, struct EntityMapper mapper[]) {
     map.height = height;
     map.width = width;
 
-    map.positions = map_create(height, width);
+    map.positions = map_create(height, width, mapper);
 }
 
 void map_print(){
@@ -34,9 +36,9 @@ void map_print(){
 
     for (int i = 0; i < map.height; i++) {
         for (int j = 0; j < map.width; j++) {
-            printf("|    ");
+            printf("| ^ ");
         }
-        printf("\n");
+        printf("|\n");
     }
 }
 

@@ -10,4 +10,6 @@ add_executable(JourneyOfTheWindows main.c
         src/lab/gameplay/gameplayService.h
         src/lab/display/structs/Actor.h
         src/lab/display/structs/Map.h
+        src/lab/display/structs/Entity.h
+        src/lab/display/structs/Object.h
 )
