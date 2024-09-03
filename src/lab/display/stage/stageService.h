@@ -11,7 +11,7 @@ struct Stage {
     char name[];
     enum StageType type;
     struct Map map;
-    struct Entity entities[];
+    struct Entity* entities;
 };
 
 #endif //STAGESERVICE_H

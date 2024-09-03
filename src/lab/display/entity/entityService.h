@@ -15,5 +15,6 @@ struct Entity {
     struct Position* position;
 };
 
+struct Entity* get_pointer_to_array_entities(int lentgh);
 
 #endif //ENTITYSERVICE_H
