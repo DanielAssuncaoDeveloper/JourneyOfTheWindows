@@ -4,7 +4,7 @@
 #define POSITIONSERVICE_H
 
 typedef struct MAP_POSITION {
-    int id;
+    int order;
 
     int grid_column_position;
     int grid_row_position;
@@ -14,7 +14,5 @@ typedef struct MAP_POSITION {
 
     ALLEGRO_BITMAP* bitmap;
 } MAP_POSITION;
-
-MAP_POSITION** create_matrix_position(int height, int width, ALLEGRO_BITMAP* gamemap_bitmap);
 
 #endif //POSITIONSERVICE_H
