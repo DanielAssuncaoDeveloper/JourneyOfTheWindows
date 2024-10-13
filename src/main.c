@@ -8,10 +8,13 @@
 #include "display/stage/stage_service.h"
 
 int main(void) {
+    // Resolvendo dependencias do Allegro
+    // (Inicializando addons; Registrando fila de eventos; Atribuindo variáveis públicas)
     resolve_dependencies();
 
     ALLEGRO_EVENT event;
     GAME_STAGE stage;
+
     stage.is_started = false;
     bool redraw = true;
 
@@ -55,7 +58,7 @@ int main(void) {
         else if (event.type == ALLEGRO_EVENT_DISPLAY_CLOSE) {
             break;
         }
-
+         
         if (redraw && al_is_event_queue_empty(queue)) 
         {
             stage_print(&stage);

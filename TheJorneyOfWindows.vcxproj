@@ -146,7 +146,6 @@
     <ClCompile Include="src\display\map\map_service.c" />
     <ClCompile Include="src\display\position\position_service.c" />
     <ClCompile Include="src\display\stage\stage_service.c" />
-    <ClCompile Include="src\gameplay\gameplayService.c" />
     <ClCompile Include="src\main.c" />
   </ItemGroup>
   <ItemGroup>
@@ -158,7 +157,6 @@
     <ClInclude Include="src\display\map\map_service.h" />
     <ClInclude Include="src\display\position\position_service.h" />
     <ClInclude Include="src\display\stage\stage_service.h" />
-    <ClInclude Include="src\gameplay\gameplayService.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="assets\font\font.tga" />

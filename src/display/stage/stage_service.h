@@ -23,7 +23,7 @@ typedef struct GAME_STAGE {
     enum GAME_STAGE_TYPE type;
     GAME_MAP map;
     GAME_ENTITY* entities;
-    ALLEGRO_BITMAP* bitmap;
+    ALLEGRO_BITMAP* bitmap; 
 } GAME_STAGE;
 
 

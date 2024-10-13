@@ -25,6 +25,11 @@ GAME_STAGE create_default_stage () {
     return stage;
 }
 
+/// <summary>
+/// Com base no tipo de fase, realiza a instância do objeto respectivo a fase
+/// </summary>
+/// <param name="type">Tipo de fase que será instânciada</param>
+/// <returns>Instância da fase</returns>
 GAME_STAGE stage_init (enum GAME_STAGE_TYPE type) {
     GAME_STAGE stage;
 
@@ -38,17 +43,27 @@ GAME_STAGE stage_init (enum GAME_STAGE_TYPE type) {
     return stage;
 }
 
+/// <summary>
+/// Com base em uma posição da fase, informada, verifica se existe alguma entidade nela
+/// </summary>
+/// <param name="stage">Fase respectiva</param>
+/// <param name="position">Posição que deseja verificar</param>
+/// <returns>Caso encontre alguma entidade nesta posição, retorna-a</returns>
 GAME_ENTITY* get_entity_on_position(GAME_STAGE* stage ,MAP_POSITION* position) {
     GAME_ENTITY* entity_return = NULL;
+    // Obtendo o tamanho do array de entidades
     int entities_lenght = sizeof(stage->entities) / sizeof(GAME_ENTITY*);
     
     for (int i = 0; i < entities_lenght; i++)
     {
+        // Obtendo a entidade na posição de iteração
         GAME_ENTITY* entity = &(stage->entities[i]);
 
-        if (position->id == entity->position->id)
+        // Verificando se a ordem da posição informada, é a mesma presente na posição da entidade da iteração
+        if (position->order == entity->position->order)
         {
-            entity_return = &(stage->entities[i]);
+            // Preenche a entidade para retorno e para e execução do for
+            entity_return = entity;
             break;
         }
     }
@@ -56,42 +71,42 @@ GAME_ENTITY* get_entity_on_position(GAME_STAGE* stage ,MAP_POSITION* position) {
     return entity_return;
 }
 
-
+/// <summary>
+/// Faz a exibição da fase no display
+/// </summary>
+/// <param name="stage"></param>
 void stage_print(GAME_STAGE* stage) {
     GAME_MAP* map = &(stage->map);
 
+    // Coloca o bitmap do mapa em evidência, e adiciona uma coloração a ele
     al_set_target_bitmap(map->bitmap);
     al_clear_to_color(al_map_rgb(255, 255, 255));
 
+    // Percorrendo a matriz de posições
     MAP_POSITION** positions = map->positions;
-
-    for (int i = 0; i < map->vertical_blocks; i++)
+    for (int i = 0; i < map->height_blocks; i++)
     {
-        for (int j = 0; j < map->horizontal_blocks; j++)
+        for (int j = 0; j < map->width_blocks; j++)
         {
+            // Pegando a posição atual e definindo uma coloração para o seu bitmap
             MAP_POSITION position = positions[i][j];
-
             al_set_target_bitmap(position.bitmap);
             al_clear_to_color(al_map_rgb(255, 0, 0));
 
+            // Verificando se existe alguma entidade na posição da iteração atual
+            // caso exita, escreve sua representação no bloco respectivo
             GAME_ENTITY* entity = get_entity_on_position(stage, &position);
             if (entity) 
             {
                 al_draw_text(font, al_map_rgb(255, 255, 255), BLOCK_WIDTH / 2, BLOCK_HEIGHT / 2, 0, "W");
             }
-
-            // TODO: RESOLVE A IMAGE LOAD
-            
-            //ALLEGRO_BITMAP* tmp_windows_bitmap = al_create_sub_bitmap(position.bitmap, BLOCK_WIDTH / 2, BLOCK_HEIGHT / 2, BLOCK_HEIGHT, BLOCK_WIDTH);
-            //al_set_new_bitmap_flags(ALLEGRO_MEMORY_BITMAP);
-            //ALLEGRO_BITMAP* image_windows_bitmap = al_load_bitmap("windows-profile.png");
-            //al_set_target_bitmap(tmp_windows_bitmap);
-            //al_draw_bitmap(image_windows_bitmap, 0, 0, 0);
         }
     }
 
+    // Coloca o bitmap do display principal em evidência
     al_set_target_bitmap(al_get_backbuffer(display));
 
+    // Escreve o bitmap da fase no display e troca a exbição dos bitmaps no display
     al_draw_bitmap(stage->bitmap, 0, 0, 0);
     al_flip_display();
 }
