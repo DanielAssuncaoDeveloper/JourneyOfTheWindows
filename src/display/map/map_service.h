@@ -16,5 +16,6 @@ GAME_MAP map_init(int height, int width, ALLEGRO_BITMAP* stage_bitmap);
 
 MAP_POSITION* get_position(int column_position, int row_position, GAME_MAP* map);
 
+void fill_matrix_positions_in_game_map(GAME_MAP map);
 
 #endif //MAPSERVICE_H

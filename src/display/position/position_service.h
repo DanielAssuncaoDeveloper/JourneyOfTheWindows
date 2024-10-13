@@ -15,6 +15,4 @@ typedef struct MAP_POSITION {
     ALLEGRO_BITMAP* bitmap;
 } MAP_POSITION;
 
-MAP_POSITION** fill_matrix_positions_in_game_map(int height, int width, ALLEGRO_BITMAP* gamemap_bitmap);
-
 #endif //POSITIONSERVICE_H
