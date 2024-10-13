@@ -9,6 +9,10 @@
 #include "../position/position_service.h"
 #include "../../configuration/game_configure.h"
 
+/// <summary>
+/// Faz a criação da fase padrão do game
+/// </summary>
+/// <returns>A instância de um GAME_STAGE</returns>
 GAME_STAGE create_default_stage () {
     struct GAME_STAGE stage;
 
@@ -74,7 +78,7 @@ GAME_ENTITY* get_entity_on_position(GAME_STAGE* stage ,MAP_POSITION* position) {
 /// <summary>
 /// Faz a exibição da fase no display
 /// </summary>
-/// <param name="stage"></param>
+/// <param name="stage">Ponteiro de GAME_STAGE que será exibido</param>
 void stage_print(GAME_STAGE* stage) {
     GAME_MAP* map = &(stage->map);
 
