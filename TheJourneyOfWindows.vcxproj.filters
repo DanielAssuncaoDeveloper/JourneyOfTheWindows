@@ -162,6 +162,12 @@
     <Image Include="instruction_stage_two.png">
       <Filter>Arquivos de Recurso</Filter>
     </Image>
+    <Image Include="instruction_stage_three.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="Intermediary_Screen_With_Ballon_1440x800.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\action\funcion_action_service.h">

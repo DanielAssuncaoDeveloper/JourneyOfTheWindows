@@ -46,7 +46,9 @@
     <Image Include="information_popup_player_colided.png" />
     <Image Include="information_popup_win.png" />
     <Image Include="instruction_stage_one.png" />
+    <Image Include="instruction_stage_three.png" />
     <Image Include="instruction_stage_two.png" />
+    <Image Include="Intermediary_Screen_With_Ballon_1440x800.png" />
     <Image Include="main_screen.png" />
     <Image Include="memory_ram_component_part_one.png" />
     <Image Include="memory_ram_component_part_three.png" />

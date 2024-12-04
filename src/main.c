@@ -42,9 +42,9 @@ int main(void) {
     bool in_game = false;
     bool redraw = true;
 
-    //int current_stage_type = STAGETYPE_COLLECT_FOLDERS;
+    int current_stage_type = STAGETYPE_COLLECT_FOLDERS;
     //int current_stage_type = STAGETYPE_COLLECT_DRIVERS;
-    int current_stage_type = STAGETYPE_COLLECT_THERMAL_NOODLES;
+    //int current_stage_type = STAGETYPE_COLLECT_THERMAL_NOODLES;
 
     al_start_timer(timer);
     while (1)
@@ -101,7 +101,7 @@ int main(void) {
 
                 al_flip_display();
                 al_rest(3);
-
+                    
                 game.game_end = true;
                 game.win = false;
             }
@@ -144,6 +144,13 @@ int main(void) {
             if (event.type == ALLEGRO_EVENT_MOUSE_BUTTON_DOWN) {
                 if (is_x_mouse_in_connect && is_y_mouse_in_connect) {
                     in_game = true;
+
+                    al_set_target_bitmap(al_get_backbuffer(display));
+                    al_draw_bitmap(al_load_bitmap("Intermediary_Screen_With_Ballon_1440x800.png"), 0, 0, 0);
+
+                    al_flip_display();
+
+                    al_rest(6);
 
                     //al_destroy_bitmap(button_connect);
                     //al_destroy_bitmap(button_quit);

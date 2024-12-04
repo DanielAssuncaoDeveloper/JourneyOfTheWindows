@@ -90,6 +90,7 @@ ACTION_BLOCK* on_deleting_block(ALLEGRO_EVENT* event, ACTION_BLOCK* instantiated
     if (event->type == ALLEGRO_EVENT_MOUSE_BUTTON_DOWN && event->mouse.button == 2) {
         int instantiated_blocks_lenght = get_array_size(instantiated_blocks);
         int last_position_added = 0;
+        bool any_block_removed = false;
 
         // TODO: Verificar o que acontece quando só tem um bloco
         ACTION_BLOCK* new_instatiated_blocks = allocate_array(instantiated_blocks_lenght - 1, sizeof(ACTION_BLOCK));
@@ -99,6 +100,7 @@ ACTION_BLOCK* on_deleting_block(ALLEGRO_EVENT* event, ACTION_BLOCK* instantiated
             ACTION_BLOCK current_block = instantiated_blocks[i];
 
             if (is_mouse_in_action_block(event->mouse, current_block)) {
+                any_block_removed = true;
                 continue;
             }
 
@@ -110,6 +112,8 @@ ACTION_BLOCK* on_deleting_block(ALLEGRO_EVENT* event, ACTION_BLOCK* instantiated
         }
 
         new_instatiated_blocks = reallocate_array(new_instatiated_blocks, instantiated_blocks_lenght - 1, sizeof(ACTION_BLOCK));
+
+        if (!any_block_removed) return instantiated_blocks;
 
         // Se chegou até aqui, é esperado que algum bloco tenha sido removido
         for (int i = 0; i < instantiated_blocks_lenght - 1; i++)
