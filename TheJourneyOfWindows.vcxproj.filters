@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Arquivos de Origem">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Arquivos de Recurso">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\background\main_screen.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="button_quit.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="button_connect.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="main_screen.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="game_screen.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="background_map_stage_one.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="player_windows_down.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="turn_left_button.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="turn_rigth_button.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="walk_button.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="start_button.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="collect_button.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="collectable_folder.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="ssd_component_part_four.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="ssd_component_part_one.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="ssd_component_part_three.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="ssd_component_part_two.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="player_windows_left.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="player_windows_right.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="player_windows_up.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="instruction_stage_one.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="screw_component.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="colered_batery_component.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="memory_ram_component_part_one.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="memory_ram_component_part_three.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="memory_ram_component_part_two.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="cpu_component_part_four.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="cpu_component_part_three.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="cpu_component_part_two.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="cpu_component_part_one.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="microchip_component.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="help_popup.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="turn_cabe_component.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="vertical_cabe_component.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="head_cabe_component.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="horizontal_cabe_component.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="information_popup_player_colided.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="information_popup_items_not_collected.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="button_how_to_play.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="button_close.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="background_map_stage_three.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="background_map_stage_two.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="collectable_graphic.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="collectable_headset.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="collectable_keyboard.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="information_popup_win.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="orange_batery_component.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="collectable_thermal_noodles.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+    <Image Include="instruction_stage_two.png">
+      <Filter>Arquivos de Recurso</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\action\funcion_action_service.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="src\configuration\game_configure.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="src\display\action_block\action_blocks_service.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="src\display\entity\entity_service.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="src\display\game\game_service.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="src\display\map\map_service.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="src\display\position\position_service.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="src\display\stage\stage_service.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\array_utils.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\action\function_action_service.c">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\configuration\game_configure.c">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\display\action_block\action_blocks_service.c">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\display\entity\entity_service.c">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\display\game\game_service.c">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\display\map\map_service.c">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\display\position\position_service.c">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\display\stage\stage_service.c">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\array_utils.c">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.c">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

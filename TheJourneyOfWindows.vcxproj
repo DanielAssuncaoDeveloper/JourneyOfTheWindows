@@ -18,11 +18,88 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\background\main_screen.png" />
+    <Image Include="background_map_stage_one.png" />
+    <Image Include="background_map_stage_three.png" />
+    <Image Include="background_map_stage_two.png" />
+    <Image Include="button_close.png" />
+    <Image Include="button_connect.png" />
+    <Image Include="button_how_to_play.png" />
+    <Image Include="button_quit.png" />
+    <Image Include="colered_batery_component.png" />
+    <Image Include="collectable_graphic.png" />
+    <Image Include="collectable_headset.png" />
+    <Image Include="collectable_keyboard.png" />
+    <Image Include="collectable_thermal_noodles.png" />
+    <Image Include="collect_button.png" />
+    <Image Include="collectable_folder.png" />
+    <Image Include="cpu_component_part_four.png" />
+    <Image Include="cpu_component_part_one.png" />
+    <Image Include="cpu_component_part_three.png" />
+    <Image Include="cpu_component_part_two.png" />
+    <Image Include="game_screen.png" />
+    <Image Include="head_cabe_component.png" />
+    <Image Include="help_popup.png" />
+    <Image Include="horizontal_cabe_component.png" />
+    <Image Include="information_popup_items_not_collected.png" />
+    <Image Include="information_popup_player_colided.png" />
+    <Image Include="information_popup_win.png" />
+    <Image Include="instruction_stage_one.png" />
+    <Image Include="instruction_stage_two.png" />
+    <Image Include="main_screen.png" />
+    <Image Include="memory_ram_component_part_one.png" />
+    <Image Include="memory_ram_component_part_three.png" />
+    <Image Include="memory_ram_component_part_two.png" />
+    <Image Include="microchip_component.png" />
+    <Image Include="orange_batery_component.png" />
+    <Image Include="player_windows_left.png" />
+    <Image Include="player_windows_right.png" />
+    <Image Include="player_windows_up.png" />
+    <Image Include="screw_component.png" />
+    <Image Include="ssd_component_part_four.png" />
+    <Image Include="ssd_component_part_one.png" />
+    <Image Include="ssd_component_part_three.png" />
+    <Image Include="ssd_component_part_two.png" />
+    <Image Include="start_button.png" />
+    <Image Include="turn_cabe_component.png" />
+    <Image Include="turn_left_button.png" />
+    <Image Include="turn_rigth_button.png" />
+    <Image Include="vertical_cabe_component.png" />
+    <Image Include="walk_button.png" />
+    <Image Include="player_windows_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\action\funcion_action_service.h" />
+    <ClInclude Include="src\configuration\game_configure.h" />
+    <ClInclude Include="src\display\action_block\action_blocks_service.h" />
+    <ClInclude Include="src\display\entity\entity_service.h" />
+    <ClInclude Include="src\display\game\game_service.h" />
+    <ClInclude Include="src\display\map\map_service.h" />
+    <ClInclude Include="src\display\position\position_service.h" />
+    <ClInclude Include="src\display\stage\stage_service.h" />
+    <ClInclude Include="src\utils\array_utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\action\function_action_service.c" />
+    <ClCompile Include="src\configuration\game_configure.c" />
+    <ClCompile Include="src\display\action_block\action_blocks_service.c" />
+    <ClCompile Include="src\display\entity\entity_service.c" />
+    <ClCompile Include="src\display\game\game_service.c" />
+    <ClCompile Include="src\display\map\map_service.c" />
+    <ClCompile Include="src\display\position\position_service.c" />
+    <ClCompile Include="src\display\stage\stage_service.c" />
+    <ClCompile Include="src\main.c" />
+    <ClCompile Include="src\utils\array_utils.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{3c412055-eb6c-4978-bbd6-d9d4d268f745}</ProjectGuid>
-    <RootNamespace>TheJorneyOfWindows</RootNamespace>
+    <ProjectGuid>{9818f3c4-c9e2-4b91-bcaa-753a94e4b5d8}</ProjectGuid>
+    <RootNamespace>TheJourneyOfWindows</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -82,7 +159,6 @@
     <Allegro_AddonFont>true</Allegro_AddonFont>
     <Allegro_AddonColor>true</Allegro_AddonColor>
     <Allegro_AddonVideo>true</Allegro_AddonVideo>
-    <Allegro_LibraryType>DynamicRelease</Allegro_LibraryType>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -140,30 +216,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="src\configuration\game_configure.c" />
-    <ClCompile Include="src\display\entity\entity_service.c" />
-    <ClCompile Include="src\display\map\map_service.c" />
-    <ClCompile Include="src\display\position\position_service.c" />
-    <ClCompile Include="src\display\stage\stage_service.c" />
-    <ClCompile Include="src\gameplay\gameplayService.c" />
-    <ClCompile Include="src\main.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="src\configuration\game_configure.h" />
-    <ClInclude Include="src\display\entity\entity_service.h" />
-    <ClInclude Include="src\display\map\map_service.h" />
-    <ClInclude Include="src\display\position\position_service.h" />
-    <ClInclude Include="src\display\stage\stage_service.h" />
-    <ClInclude Include="src\gameplay\gameplayService.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="assets\font\font.tga" />
-    <Image Include="src\display\stage\windows-profile.png" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="packages\AllegroDeps.1.14.0\build\native\AllegroDeps.targets" Condition="Exists('packages\AllegroDeps.1.14.0\build\native\AllegroDeps.targets')" />
